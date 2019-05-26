@@ -198,6 +198,6 @@ def game_hash
     #     end
     #   end
     # end
-    return max
+    return sizes
 
   end
