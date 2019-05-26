@@ -190,7 +190,7 @@ def game_hash
       end
     end
     sizes.sort
-    max = sizes.last
+    max = sizes[-1]
     game_hash.each do |location, team_data|
       team_data[:players].each do |name, stats|
         if shoe_size(name) == last
