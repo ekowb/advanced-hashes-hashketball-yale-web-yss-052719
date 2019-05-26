@@ -198,6 +198,5 @@ def game_hash
         end
       end
     end
-    return new_sizes
 
   end
