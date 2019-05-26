@@ -193,6 +193,10 @@ def game_hash
     max = sizes.last
     game_hash.each do |location, team_data|
       team_data[:players].each do |name, stats|
-        if
+        if shoe_size(name) == last
+          return stats[:rebounds]
+        end
+      end
+    end
 
   end
