@@ -172,7 +172,7 @@ def game_hash
     #   end
     # end
     return brooklyn_numbers
-    return charlotte_numbers
+    # return charlotte_numbers
   end
 
 
