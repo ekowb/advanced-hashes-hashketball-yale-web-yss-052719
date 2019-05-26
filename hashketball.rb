@@ -189,5 +189,6 @@ def game_hash
         indx = indx + 1
       end
     end
-    return sizes
+    sizes.sort
+    return sizes.last
   end
