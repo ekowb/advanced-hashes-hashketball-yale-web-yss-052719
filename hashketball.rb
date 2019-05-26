@@ -190,13 +190,14 @@ def game_hash
       end
     end
     new_sizes = sizes.sort
-    # game_hash.each do |location, team_data|
-    #   team_data[:players].each do |name, stats|
-    #     if shoe_size(name) == max
-    #       return stats[:rebounds]
-    #     end
-    #   end
-    # end
+    max = new_sizes.last
+    game_hash.each do |location, team_data|
+      team_data[:players].each do |name, stats|
+        if shoe_size(name) == max
+          return stats[:rebounds]
+        end
+      end
+    end
     return new_sizes
 
   end
