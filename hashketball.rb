@@ -131,7 +131,6 @@ def game_hash
 
   def shoe_size(player_name)
     game_hash.each do |location, team_data|
-    #  binding.pry
       team_data[:players].each do |name, stats|
         if name == player_name
           return stats[:shoe]
