@@ -161,8 +161,8 @@ def game_hash
     game_hash.each do |location, team_data|
       if team_data[:team_name] == team
         team_data[:players].each do |name, stats|
-        brooklyn_numbers[counter] = stats[:number]
-        counter = counter + 1
+          array[counter] = stats[:number]
+          counter = counter + 1
       end
     end
     # game_hash.each do |location, team_data|
