@@ -163,8 +163,10 @@ def game_hash
         team_data[:players].each do |name, stats|
           array[counter] = stats[:number]
           counter = counter + 1
+        end
       end
     end
+    
     # game_hash.each do |location, team_data|
     #   team_data[:players].each do |name, stats|
     #     charlotte_numbers[counter] = stats[:number]
