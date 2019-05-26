@@ -166,14 +166,14 @@ def game_hash
         end
       end
     end
-    
+
     # game_hash.each do |location, team_data|
     #   team_data[:players].each do |name, stats|
     #     charlotte_numbers[counter] = stats[:number]
     #     counter = counter + 1
     #   end
     # end
-    return brooklyn_numbers
+    return array
     # return charlotte_numbers
   end
 
