@@ -179,3 +179,8 @@ def game_hash
       end
     end
   end
+
+  def big_shoe_rebounds
+    sizes = []
+    game_hash.each do |location, team_data|
+      team_data[:players].each do |name, stats|
