@@ -156,11 +156,11 @@ def game_hash
   end
 
   def player_numbers(team)
-    brooklyn_numbers = []
-    charlotte_numbers = []
+    array = []
     counter = 0
     game_hash.each do |location, team_data|
-      team_data[:players].each do |name, stats|
+      if team_data[:team_name] == team
+        team_data[:players].each do |name, stats|
         brooklyn_numbers[counter] = stats[:number]
         counter = counter + 1
       end
