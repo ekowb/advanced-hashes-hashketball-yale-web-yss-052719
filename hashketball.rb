@@ -186,3 +186,4 @@ def game_hash
     game_hash.each do |location, team_data|
       team_data[:players].each do |name, stats|
         sizes[indx] = shoe_size(name)
+        indx = indx + 1
