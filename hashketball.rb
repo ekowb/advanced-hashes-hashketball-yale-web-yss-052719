@@ -189,7 +189,7 @@ def game_hash
         indx = indx + 1
       end
     end
-    sizes.sort
+    new_sizes = sizes.sort
     # game_hash.each do |location, team_data|
     #   team_data[:players].each do |name, stats|
     #     if shoe_size(name) == max
